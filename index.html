@@ -6,6 +6,16 @@
 <title>Imysia — L'IA dans votre système</title>
 <meta name="description" content="Imysia conseille les entreprises et installe des systèmes d'IA on-premises, dans leur propre système d'information. Vos données restent chez vous.">
 <link rel="stylesheet" href="fonts/fonts.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://imysia.fr/">
+<meta property="og:title" content="Imysia — L'IA dans votre système">
+<meta property="og:description" content="Conseil et systèmes d'IA on-premises pour les entreprises. Vos données restent chez vous.">
+<meta property="og:image" content="https://imysia.fr/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
 <style>
 :root{
   --canvas:#ffffff; --paper:#f6f8fa; --ink:#1a1a1a; --graphite:#323232; --smoke:#5f5f5f; --ash:#707070;
@@ -42,7 +52,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdro
 header.scrolled{border-bottom-color:var(--hairline)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
 .brand{display:flex;align-items:center;gap:14px}
-.mark{width:30px;height:30px}
+.logo{display:block;height:34px;width:auto}
 .brand-name{font-family:var(--display);font-weight:300;font-size:26px;letter-spacing:-.03em;color:var(--ink);line-height:1}
 .brand-sub{font-family:var(--mono);font-size:10px;line-height:1.25;color:var(--smoke);letter-spacing:.04em;border-left:1px solid var(--hairline);padding-left:14px}
 .links{display:flex;gap:28px}
@@ -215,6 +225,9 @@ footer{border-top:1px solid var(--rule);padding:40px 0 64px;font-family:var(--mo
   .hero-in{padding:80px 0}
   .hero h1{font-size:36px}
   .brand-sub{display:none}
+  .logo{height:28px}
+  .nav .btn{height:36px;padding:0 12px;font-size:12px;white-space:nowrap}
+  .nav .btn .arr{display:none}
   .offers,.method{grid-template-columns:1fr}
   .hero-meta{grid-template-columns:1fr;gap:20px}
   .soft-row{grid-template-columns:1fr;gap:16px}
@@ -237,8 +250,7 @@ footer{border-top:1px solid var(--rule);padding:40px 0 64px;font-family:var(--mo
 <header id="top">
   <div class="wrap nav">
     <a href="#top" class="brand" aria-label="Imysia, accueil">
-      <svg class="mark" viewBox="0 0 30 30" aria-hidden="true"><rect x=".5" y=".5" width="29" height="29" rx="3.5" fill="none" stroke="#1a1a1a" stroke-dasharray="3 3"/><rect x="8" y="8" width="14" height="14" rx="2" fill="#1a1a1a"/><circle cx="15" cy="15" r="2.2" fill="#d3dfeb"/></svg>
-      <span class="brand-name">Imysia</span>
+      <img class="logo" src="logo/imysia-logo.svg" alt="Imysia" width="139" height="34">
       <span class="brand-sub">in my system,<br>IA</span>
     </a>
     <nav class="links" aria-label="Navigation principale">
