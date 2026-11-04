@@ -1,0 +1,14 @@
+# Imysia — forcer HTTPS et le domaine principal imysia.fr
+RewriteEngine On
+
+# http:// ou www. -> https://imysia.fr (redirection permanente)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://imysia.fr/$1 [R=301,L]
+
+# Le navigateur retient d'utiliser HTTPS pendant 1 an
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000" env=HTTPS
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
